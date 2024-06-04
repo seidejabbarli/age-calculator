@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(0, 0%, 94%);
+}
+.container{
+    margin-top: 60px;
+    width:800px ;
+    height:640px ;
+    border: 1px ;
+    border-radius: 25px;
+    border-bottom-right-radius: 180px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color:  hsl(0, 0%, 100%);
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.part1{
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+.input-control{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+label{
+    font-style: normal;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: hsl(0, 1%, 44%);
+    font-size: 15px;
+}
+input{
+    border: 1px solid hsl(0, 0%, 86%) ;
+    border-radius: 9px;
+    color: hsl(0, 1%, 44%) ;
+    font-weight: 700;
+    width: 150px;
+    font-size: 30px;
+    padding: 12px 20px; 
+    padding-right: 30px;
+    cursor: pointer;
+    outline-color:  hsl(259, 100%, 65%);
+}
+.error{
+    height: 16px;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+}
+.part2{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 90px;
+}
+.line{
+    margin-top: 45px;
+    border: 1px solid  hsl(0, 0%, 86%);
+    width: 614px;
+    height: 1px;
+}
+
+.cal{
+    display: flex;
+    flex-direction: column;
+}
+p{
+   font-size: 95px;
+   height: 100px;
+}
+.dash{
+    color:  hsl(259, 100%, 65%); 
+}
+.written{
+    font-weight: 800;
+}
+i{
+    font-weight: 800;
+}
+button{
+    width: 90px;
+    border: 1px;
+    background-color:  hsl(259, 100%, 65%)  ;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-duration: .2s;
+}
+button:hover{
+    background-color: black;
+}
+.icon{
+    font-size: 45px;
+    color: white;
+}
+
+.error{
+    color: red;
+}
+.input-control.error input{
+    border-color: red;
+}
+.input-control.error label{
+    color: red;
+}

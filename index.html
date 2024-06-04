@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <form action="">
+          <div class="part1">
+            <div class="input-control">
+                <label for="day">DAY</label>
+                <input id="day" type="text" placeholder="MM">
+                <p class="error"></p>
+            </div>
+            <div class="input-control">
+                <label for="month">MONTH</label>
+                <input id="month" type="text" placeholder="MM">
+                <p class="error"></p>
+            </div>
+            <div class="input-control">
+                <label for="year">YEAR</label>
+                <input id="year" type="text" placeholder="YYYY">
+                <p class="error"></p>
+            </div>
+          </div>
+          <div class="part2">
+            <div class="line"></div>
+            <button type="submit"> <ion-icon class="icon" name="arrow-down-outline"></ion-icon> </button>
+          </div>
+        </form>
+    
+        <div class="cal hidden">
+            <p>
+             <span class="years dash"><i class="years-dash">--</i></span>
+             <span class="written"><i>years</i></span>
+            </p>
+            <p>
+                <span class="months dash"><i class="months-dash">--</i></span>
+                <span class="written"><i>months</i></span>
+            </p>
+            <p>
+                <span class="days dash"><i class="days-dash">--</i></span>
+                <span class="written"><i>days</i></span>
+            </p>
+        </div>
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
